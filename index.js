@@ -4,7 +4,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
 const app = express()
-const PAGE_ACCESS_TOKEN = process.env.FB_PAGE_ACCESS_TOKEN
+const PAGE_ACCESS_TOKEN = "EAALKg7GK2KcBAH1asWqB13XWS5dU62rZCnpjFgUN8T1ZAIjX3iZAIoHNFt13LJ1tB3sNCrs4ZBUl83FSBRiZCLqvCjYOjrfbkOnK5BmszV9YzYXgNjVzwn30iU5CZBeFiqEdJO7Y2fpHeE3vEdnNW3ijV2hmfLQbosoOHxEMs2oeZARvzeuYru0"
 
 app.set('port', (process.env.PORT || 5000))
 
