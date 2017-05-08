@@ -20,14 +20,14 @@ app.get('/', function (req, res) {
 
 // for Facebook verification
 app.get('/webhook', function(req, res) {
-  if (req.query['hub.mode'] === 'subscribe' &&
-      req.query['hub.verify_token'] === 'vvaiedemo') {
-    console.log("Validating webhook");
-    res.status(200).send(req.query['hub.challenge']);
-  } else {
-    console.error("Failed validation. Make sure the validation tokens match.");
-    res.sendStatus(403);          
-  }  
+  if (req.query['hub.mode'] === 'subscribe' && req.query['hub.verify_token'] === 'vvaiedemo')
+	  {
+		console.log("Validating webhook");
+		res.status(200).send(req.query['hub.challenge']);
+	  } else {
+		console.error("Failed validation. Make sure the validation tokens match.");
+		res.sendStatus(403);          
+	  }  
 });
 
 // Spin up the server
